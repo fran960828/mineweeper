@@ -88,7 +88,7 @@ header {
 // FONDO Y COLOR GENERAL
 // ─────────────────────────────────────────────
 body {
-  background-image: url("img/bg.png"); // Imagen de fondo
+  background-image: url("/img/bg.png"); // Imagen de fondo
   color: white; // Color de texto principal
   z-index: -1000; // Fondo detrás de todo
 }
