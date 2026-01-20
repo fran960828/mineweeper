@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Buscaminas</title>
+    <script type="module" crossorigin src="/minesweeper/assets/index-D9qBmKZX.js"></script>
+    <link rel="stylesheet" crossorigin href="/minesweeper/assets/index-CBWLgyJ6.css">
+  </head>
+  <body>
+    <header>
+      <img src="/minesweeper/assets/logo-CL6JZw3e.png" alt="logo" />
+      <h1>MINESWEEPER</h1>
+    </header>
+    <main>
+      <div class="board">
+        <div class="header">
+          <p id="container__timer">Time:<span id="timer">00:00:00</span></p>
+          <p id="container__flags">Flags:<span id="flags">0</span></p>
+        </div>
+        <div id="game"></div>
+      </div>
+      <div class="btns">
+        <button id="reset">Restart Game</button>
+        <button id="difficulty">Difficulty Level</button>
+        <button id="statsBtn">Stadistics</button>
+      </div>
+      <div class="overlay">
+        <div class="popup">
+          <h2>Selecciona la Dificultad</h2>
+          <p>Elige el nivel de desafío para tu partida de Buscaminas.</p>
+          <button class="level__btn" data-level="easy">Easy 🟢</button>
+          <button class="level__btn" data-level="medium">Medium 🟡</button>
+          <button class="level__btn" data-level="hard">Hard 🔴</button>
+        </div>
+      </div>
+      <div id="statsModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal">&times;</span>
+          <h3>🏆 Mejores tiempos</h3>
+          <ul id="statsList"></ul>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
